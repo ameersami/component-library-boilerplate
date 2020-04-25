@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "test": "npx jest --config=jest.config.json"
   },
   "keywords": [],
   "author": "",
@@ -47,16 +47,24 @@
     "@storybook/addon-viewport": "^5.3.18",
     "@storybook/addons": "^5.3.18",
     "@storybook/react": "^5.3.18",
+    "@types/enzyme": "^3.10.5",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/jest": "^25.2.1",
     "@types/prop-types": "^15.7.3",
     "@typescript-eslint/eslint-plugin": "^2.29.0",
     "babel-loader": "^8.1.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.4.4",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
+    "jest": "^25.4.0",
     "react-docgen-typescript-loader": "^3.7.2",
     "rollup": "^2.7.2",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
+    "ts-jest": "^25.4.0",
     "ts-loader": "^7.0.1",
     "typescript": "^3.8.3"
   }
