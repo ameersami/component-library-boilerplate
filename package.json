@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "start-storybook -p 6006",
+    "test": "npx jest --config=jest.config.json",
     "build": "rollup -c",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "test": "npx jest --config=jest.config.json"
+    "build-storybook": "build-storybook"
   },
   "keywords": [],
   "author": "",
